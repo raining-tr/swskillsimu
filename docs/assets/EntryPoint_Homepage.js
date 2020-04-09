@@ -57,41 +57,14 @@
                 } else {
                     elementHyperlink.href = characterData.url;
                 }
-
-                let theDiv = d.createElement("div");
-                theDiv.classList.add("col-md-2");
+                let theDiv = d.createElement("li");
+                theDiv.classList.add("one");
                 theDiv.appendChild(elementHyperlink);
                 domCharacterList.appendChild(theDiv);
+
             }
         }
     }
 
     d.getElementById("jsEnabled").remove();
 })(window, document);
-
-$(function () {
-    let thelet_yep_totally_let = $("#sakura");
-    if (typeof (thelet_yep_totally_let.sakura) === "function")
-        thelet_yep_totally_let.sakura();
-
-    var theTarget = $(".scrolling-wrapper-flexbox"),
-        curDown = false,
-        // curYPos = 0,
-        curXPos = 0,
-        mouseOutFunc = function () {
-            curDown = false;
-        };
-
-    theTarget.mousemove(function (m) {
-        if (curDown === true) {
-            // theTarget.scrollTop(theTarget.scrollTop() + (curYPos - m.pageY));
-            theTarget.scrollLeft(theTarget.scrollLeft() + (curXPos - m.pageX));
-        }
-    }).mousedown(function (m) {
-        curDown = true;
-        curYPos = m.pageY;
-        curXPos = m.pageX;
-    }).mouseleave(mouseOutFunc);
-
-    $(window).mouseup(mouseOutFunc);
-});

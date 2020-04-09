@@ -84,8 +84,8 @@
                 selectImage: "assets/images/ChiiSelect.png",
                 enabled: false,
                 reason: "Your waifu is not here"
-            }
-            "Ephnel": {
+            },
+            "Someone": {
                 url: "someone",
                 selectImage: "assets/images/SomeoneSelect.png",
                 enabled: false,

@@ -1,3 +1,13 @@
+@charset "UTF-8";
+
+body {
+    color: white;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+
 .text-noselect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -22,6 +32,15 @@
 
 .require-js {
     display: none !important;
+}
+
+.image-bg {
+    background-color: rgb(17, 17, 17);
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    background-position: center center
 }
 
 .side-right {

@@ -3,38 +3,48 @@ body {
 }
 
 /* Custom */
+.tiles ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.one {
+  float: none;
+}
+
+.tiles li {
+  height: 100vh;
+  flex-grow: 1;
+  margin: 0 0 -20%;
+}
+
+.tiles img {
+  max-height: 100%;
+  min-width: 80%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.press li {
+    display: inline-block; /* Get all images to show in a row */
+    width: 25%;            /* Show 4 logos per row */
+    text-align: center;    /* Centre align the images */
+}
+
+@media (max-width: 960px) and (min-width: 501px) {
+    .press li { width: 50%; } /* Show 2 logos per row on medium devices (tablets, phones in landscape) */
+}
+
+@media (max-width: 500px) {
+    .press li { width: 100%; } /* On small screens, show one logo per row */
+}
+
 .text-feature-supported {
     color: rgb(24, 145, 8);
 }
 
 .text-feature-missing {
     color: rgb(161, 4, 4);
-}
-
-.scrolling-wrapper-flexbox {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: visible;
-    overflow-y: hidden;
-
-    transform: rotateX(180deg);
-    -ms-transform: rotateX(180deg);
-    /* IE 9 */
-    -webkit-transform: rotateX(180deg);
-    /* Safari and Chrome */
-}
-
-.scrolling-wrapper-flexbox .row {
-    min-width: 1280px;
-    flex-wrap: nowrap;
-}
-
-.scrolling-wrapper-flexbox>.content {
-    transform: rotateX(180deg);
-    -ms-transform: rotateX(180deg);
-    /* IE 9 */
-    -webkit-transform: rotateX(180deg);
-    /* Safari and Chrome */
 }
 
 .whitetext {
@@ -77,60 +87,6 @@ a.disabled {
     transform: translate(-100%, -100%);
 }
 
-/* carousel */
-.media-carousel
-{
-  margin-bottom: 0;
-  padding: 0 40px 30px 40px;
-  margin-top: 30px;
-}
-/* Previous button  */
-.media-carousel .carousel-control.left
-{
-  left: -12px;
-  background-image: none;
-  background: none repeat scroll 0 0 #222222;
-  border: 4px solid #FFFFFF;
-  border-radius: 23px 23px 23px 23px;
-  height: 40px;
-  width : 40px;
-  margin-top: 30px
-}
-/* Next button  */
-.media-carousel .carousel-control.right
-{
-  right: -12px !important;
-  background-image: none;
-  background: none repeat scroll 0 0 #222222;
-  border: 4px solid #FFFFFF;
-  border-radius: 23px 23px 23px 23px;
-  height: 40px;
-  width : 40px;
-  margin-top: 30px
-}
-/* Changes the position of the indicators */
-.media-carousel .carousel-indicators
-{
-  right: 50%;
-  top: auto;
-  bottom: 0px;
-  margin-right: -19px;
-}
-/* Changes the colour of the indicators */
-.media-carousel .carousel-indicators li
-{
-  background: #c0c0c0;
-}
-.media-carousel .carousel-indicators .active
-{
-  background: #333333;
-}
-.media-carousel img
-{
-  width: 250px;
-  height: 100px
-}
-/* End carousel */
 
 /* NAVBAR */
 
@@ -151,6 +107,13 @@ a.disabled {
 
 .lead {
   color: #fff;
+}
+
+
+.characters {
+  margin: 4em auto;
+  padding: 4em;
+  position: relative;
 }
 
 /* Page Content // SECTION FEATURES */

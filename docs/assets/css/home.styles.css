@@ -1,0 +1,48 @@
+.text-feature-supported {
+    color: rgb(24, 145, 8);
+}
+
+.text-feature-missing {
+    color: rgb(161, 4, 4);
+}
+
+
+.whitetext {
+    color: white;
+}
+
+.bg-dark-fade {
+    background-color: rgba(17, 17, 17, 0.8) !important;
+}
+
+.characterimage:not(.disabled):hover {
+    opacity: 1 !important;
+    /* cursor: pointer; */
+}
+
+.characterimage {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.characterimage:not(.disabled) {
+    opacity: 0.7;
+    transition: all .2s ease-in-out;
+}
+
+a.disabled {
+    cursor: default;
+}
+
+.characterimage.disabled {
+    opacity: 1;
+}
+
+.hideaway {
+    display: none;
+    width: 0px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    transform: translate(-100%, -100%);
+}
