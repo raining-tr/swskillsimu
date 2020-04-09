@@ -105,6 +105,16 @@ a.disabled {
   background-repeat: no-repeat;
 }
 
+.haru_bg {
+  height: 100%;
+  width: 100%;
+  min-height: 500px;
+  background-image: url('../images/haru_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .lead {
   color: #fff;
 }

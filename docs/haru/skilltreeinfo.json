@@ -1,6 +1,7 @@
 {
   "CharacterName": "Haru Estia",
   "CharacterWikiURL": "https://wiki.soulworkerhq.com/w/Haru_Estia",
+  "MaxLevel":" 68,
   "AvailableClass": {
     "0": {
       "Name": "Base",
@@ -1452,6 +1453,10 @@
           "RequiredSP": 0
         }
       }
+    },
+    "ExtinctionPrelude": {
+      "Passive": true,
+      "Name":
     }
   }
 }

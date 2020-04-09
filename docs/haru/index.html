@@ -18,7 +18,7 @@
         <!--<link rel="stylesheet" href="../sakura/jquery-sakura.min.css" />-->
         <link rel="stylesheet" href="../assets/css/styles.css?v=4" />
         <link rel="stylesheet" href="../assets/css/kr.css?v=3" />
-
+        <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
         <script src="../assets/js/common.js"></script>
         <script src="../assets/DefaultConfig.js"></script>
         <script src="../assets/Localization.js"></script>
@@ -67,91 +67,94 @@
     </head>
 
     <body>
-        <div id="forbackground" class="fixed-bg image-bg"></div>
-        <header class="require-js">
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark-fade">
-                <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span id="charName"></span>
-                    <strong class="caret"></strong>
-                </a>
-                <div id="charList" class="dropdown-menu">
-                    <!-- <a class="dropdown-item" href="../haru">Haru Estia</a>
-                    <a class="dropdown-item" href="../erwin">Erwin Arclight</a>
-                    <a class="dropdown-item" href="../lily">Lily Bloomerchen</a>
-                    <a class="dropdown-item" href="../stella">Stella Unibell</a>
-                    <a class="dropdown-item" href="../jin">Jin Seipatsu</a>
-                    <a class="dropdown-item" href="../iris">Iris Yuma</a> -->
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" id="morecharacterinfo">More info</a>
-                    <a class="dropdown-item" href="..">Home</a>
-                </div>
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a id="levelBoxtd" class="nav-link levellable">Level:</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="classBoxtd" class="nav-link levellable">Class:</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                                aria-haspopup="true" aria-expanded="false">
-                                <span id="e_investedSP">Invested: </span>
-                                <strong class="caret"></strong>
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">
-                                    <p id="spusageinfo"></p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a id="e_remainingSP" class="nav-link no-mouse-change">Remaining: </a>
-                        </li>
-                        <li class="nav-item">
-                            <button id="slotassignment" class="btn btn-info mr-sm-2">Slot assignment</button>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav navbar-right">
-                        <li class="nav-item">
-                            <button id="resetAllSkill" class="btn btn-primary mr-sm-2">Reset All Skills</button>
-                        </li>
-                        <li class="nav-item">
-                            <div class="btn-group mr-sm-2">
-                                <button id="copyURL" type="button" class="btn btn-success"
-                                    data-clipboard-target="#copymagic">Copy Link to current build</button>
-                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-                                    <span class="caret"></span>
-                                    <span class="sr-only">Toggle Dropdown</span>
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right" role="menu">
-                                    <a class="dropdown-item" id="copyURLshowassign" href="#">Copy Link to current build
-                                        and show skill assignment on load</a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <main class="require-js" role="main">
-            <div class="container-fluid body-content">
-                <div class="container">
-                    <div id="skilltree">
-                        <ul>
-                            <li id="activeskill" class="activeskill"></li>
-                            <li id="passiveskill" class="passiveskill"></li>
-                        </ul>
-                    </div>
-                </div>
-                <!--<div class="minsize"><div class="scrollable"><div class="overjumbotron skilltreeclass"></div></div></div>-->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark-fade">
+          <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">
+              <span id="charName"></span>
+              <strong class="caret"></strong>
+          </a>
+          <div id="charList" class="dropdown-menu">
+              <!-- <a class="dropdown-item" href="../haru">Haru Estia</a>
+              <a class="dropdown-item" href="../erwin">Erwin Arclight</a>
+              <a class="dropdown-item" href="../lily">Lily Bloomerchen</a>
+              <a class="dropdown-item" href="../stella">Stella Unibell</a>
+              <a class="dropdown-item" href="../jin">Jin Seipatsu</a>
+              <a class="dropdown-item" href="../iris">Iris Yuma</a> -->
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" id="morecharacterinfo">More info</a>
+              <a class="dropdown-item" href="..">Home</a>
+          </div>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+              data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                      <a id="levelBoxtd" class="nav-link levellable">Level:</a>
+                  </li>
+                  <li class="nav-item">
+                      <a id="classBoxtd" class="nav-link levellable">Class:</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                          aria-haspopup="true" aria-expanded="false">
+                          <span id="e_investedSP">Invested: </span>
+                          <strong class="caret"></strong>
+                      </a>
+                      <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">
+                              <p id="spusageinfo"></p>
+                          </a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a id="e_remainingSP" class="nav-link no-mouse-change">Remaining: </a>
+                  </li>
+                  <li class="nav-item">
+                      <button id="slotassignment" class="btn btn-info mr-sm-2">Slot assignment</button>
+                  </li>
+              </ul>
+              <ul class="navbar-nav navbar-right">
+                  <li class="nav-item">
+                      <button id="resetAllSkill" class="btn btn-primary mr-sm-2">Reset All Skills</button>
+                  </li>
+                  <li class="nav-item">
+                      <div class="btn-group mr-sm-2">
+                          <button id="copyURL" type="button" class="btn btn-success"
+                              data-clipboard-target="#copymagic">Copy Link to current build</button>
+                          <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right" role="menu">
+                              <a class="dropdown-item" id="copyURLshowassign" href="#">Copy Link to current build
+                                  and show skill assignment on load</a>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+        <header class="haru_bg require-js">
+            <div class="container h-100">
+              <div class="row h-100 align-items-center">
+              </div>
             </div>
+          </header>
+          <div class="container updated">
+            <div class="row">
+              <h1 class="font-weight-light">Haru</h1>
+              <div id="skilltree" class="col-12 left_skills">
+                <ul>
+                  <li id="activeskill" class="activeskill"></li>
+                  <li id="passiveskill" class="passiveskill"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+                <!--<div class="minsize"><div class="scrollable"><div class="overjumbotron skilltreeclass"></div></div></div>-->
         </main>
         <footer class="require-js">
             <nav class="navbar navbar-expand-md fixed-bottom navbar-dark bg-dark-fade">

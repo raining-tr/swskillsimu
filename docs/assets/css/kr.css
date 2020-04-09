@@ -169,14 +169,6 @@
     color: white
 }
 
-.container-fluid {
-    position: absolute;
-    top: 60px;
-    bottom: 60px;
-    right: 0;
-    left: 0;
-    overflow-y: auto;
-}
 
 li.titletablelike {
     float: left;
@@ -194,10 +186,8 @@ li.tablelike {
 
 div.skillinfopanel {
     position: relative;
-    border: 1px solid black;
     width: 155px;
     height: 92px;
-    background-color: rgba(0, 0, 0, 0.4)
     /*display: inline-block;
     margin-right: 20px;
     margin-bottom: 20px;//*/
@@ -225,23 +215,24 @@ button.skillup {
 li.activeskill {
     float: left;
     display: block;
-    width: 570px;
+    width: 50%;
 }
 
 ul.tableactiveskill {
-    width: 570px;
+    float: left;
+    width: 50%;
     list-style: none outside none;
 }
 
 li.passiveskill {
-    float: left;
+    float: right;
     display: block;
-    width: 390px;
+    width: 50%;
 }
 
 ul.tablepassiveskill {
     float: right;
-    width: 390px;
+    width: 50%;
     list-style: none outside none;
 }
 
